@@ -1,0 +1,4 @@
+flask 
+flask_mysqldb
+ibm-watson>=5.1.0
+sendgrid
