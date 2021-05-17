@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>contact</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+<!--
+
+Finance Business TemplateMo
+
+https://templatemo.com/tm-545-finance-business
+
+-->
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa "></i>Prajwal's Nutrition Assistant</a></li>
+              
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="dashboard"><h2>Daily food Tracker</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard">Dashboard
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services">Food Services</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="track">Daily Tracker</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="/diary">Personal Diary</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"><h1>{{  msg  }}</h1></br>
+            <h1>Daily Tracker</h1>
+            
+            <span>Enter the food you consume daily.We will track the nutrients.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+ <!-- // Item -->
+        </div>
+    </div>
+
+
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our Services<em>Use any ONE of these 2</em></h2>
+              <h5>We need to keep your data secured so ensure to enter user name and password every time you enter the food details <em></em></h4>
+           </br>
+              <h3>{{v}}<em></em></h3></br>
+              <h2>Click<em> here to submit the data</em></h2>
+
+      <form  action ="/submit" id="upload-file" method="post" enctype="multipart/form-data">
+
+<button type="filled-button" href="/submit" id="button" class="btn btn-secondary"> Submit </button>
+</form>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="down-content">
+
+    <h4>To upload an image</h4>
+        <form  action ="/track" id="upload-file" method="post" enctype="multipart/form-data">
+        
+        <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your  username </label></br>
+                                    <input id="username" name="username"  type="text" placeholder="Enter Your username"required=""/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label></br>
+                                    <input id="password" name="password"  type="password" placeholder="Enter Your Password" required=""/> 
+                                </p>
+                                <p> 
+                                    <label for="date" class="date" data-icon="u" > Enter date </label></br>
+                                    <input id="date" name="date"  type="date" placeholder="Enter date"/>
+                                </p><p> 
+                                    <label for="Time" class="Time" data-icon="u" > Enter Time </label></br>
+                                    <input id="Time" name="Time"  type="Time" placeholder="time"required=""/>
+                                </p>
+        <fieldset>
+        <input type="file" name="image" id="imageUpload" accept=".jpg, .jfif, .png, .jpeg">
+        </fieldset>
+
+        <button action ="/track" type="submit"  id="button" class="btn btn-primary"> ok </button></br>
+      </form></br>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="down-content">
+
+<h4>To enter the food name</t4></br></br>
+<form action= "/trackdata" id="upload-file" method="post" enctype="multipart/form-data">
+  <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your  username </label></br>
+                                    <input id="username" name="username"  type="text" placeholder="Enter Your username"required=""/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label></br>
+                                    <input id="password" name="password"  type="password" placeholder="Enter Your Password" required=""/> 
+                                </p>
+                                <p> 
+                                    <label for="date" class="date" data-icon="u" > Enter date </label></br>
+                                    <input id="date" name="date"  type="date" placeholder="Enter date"required=""/>
+                                </p><p> 
+                                    <label for="Time" class="Time" data-icon="u" > Enter Time </label></br>
+                                    <input id="Time" name="Time"  type="Time" placeholder="Enter Your username" required="" />
+                                </p>
+  <fieldset>
+<input type="text" name="data" class="form-control" placeholder="enter food name"   >
+</fieldset>
+<button type="submit" href="/trackdata" id="button" class="btn btn-primary"> ok </button>
+
+</form>
+
+
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Click<em> here to submit the data</em></h2><form  action ="/submit" id="upload-file" method="post" enctype="multipart/form-data">
+
+<button type="filled-button" href="/submit" id="button" class="btn btn-secondary"> Submit </button>
+</form>
+
+<div class="single-services">
+      <div class="container">
+        <div class="row" id="tabs">
+          <div class="col-md-6">
+
+              <div id="contact" class="contact">
+<div hcrf="#" class="row">
+  <div class="column">
+ 
+  
+    <table>
+      
+                
+                
+                {% for concept in text %}
+                <tr>
+                  {% if concept.value>0.99 %}
+                  <td>{{ concept.name }}</td>
+                  
+                  <td>{{ concept.value }}</td>
+                  </tr>
+                  {% endif %}
+                {% endfor %}
+                <td>{{ v }}</td>
+                
+</table>
+
+
+</div>
+
+
+
+  </div>
+</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    
+          </div>
+          
+              <article id='tabs-1'>
+                <style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: center;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 4px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+
+
+</body>
+</html>
+</div>
+
+               
+              <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+
+<img src="static/assets/images/37317-3-honey-transparent-image.png" alt="Paris" style="width:50%;">
+
+</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                
+                
+               
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            
+            
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Developer details</h4>
+            <ul class="loca">
+                      <li>
+                        <a href="#"></a>Prajwal G B</li>
+                          <li>
+                            <a href="contactprajwalgb@gmail.com"></a>contactprajwalgb@gmail.com</li>
+                          </ul>
+          </div>
+          
+          <div class="col-md-3 footer-item last-item">
+            <h4>Contact Us</h4>
+            <div class="contact-form">
+              <form id="contact footer-contact" action="/contact1" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="YourName" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="Email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input class="form-control" placeholder="Phone Number" type="text" name="PhoneNumber">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="Message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="static/assets/js/custom.js"></script>
+    <script src="static/assets/js/owl.js"></script>
+    <script src="static/assets/js/slick.js"></script>
+    <script src="static/assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>

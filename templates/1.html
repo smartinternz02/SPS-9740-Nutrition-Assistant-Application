@@ -1,0 +1,255 @@
+<link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="static/css/responsive.css">  
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"><header>
+    <!-- header inner -->
+    <div class="header-top">
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+         
+               <div class="menu-area">
+                <div class="limit-box">
+                  <nav class="main-menu ">
+                    <ul class="menu-area-main">
+                      <li class="active"> <a href="/">Home</a> </li>
+                      <a type="button" class="btn btn-success mr-1" id="donate" href="login">LOGIN</a>
+                    <li>  <a type="button"  id="donate" href="register">register</a></li>
+                      
+                                      
+                     <li> <a href="#"><img src="static/icon/icon_b.png" alt="#" /></a></li>
+                     </ul>
+                   </nav>
+                 </div>
+               </div> 
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+<head>
+    
+    <title>Prajwals nutrition assistant</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/main2.css') }}" rel="stylesheet"> 
+  <style>
+  .bg-dark {
+    background-color: #42678c!important;
+  }
+  #result {
+    color: #0a1c4ed1;
+  }
+  </style>
+</head>
+
+     <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Prajwals nutrition assistant </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="content" style="margin-top:2em">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-6 bd" >
+               
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 10%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<h5 class="text-center mt-3">This is Just a Demo service for more services do register.</h5>
+<h5 class="text-center mt-3">{{msg}}</h5>
+
+<div hcrf="#" class="row">
+  <div class="column">
+ <h5 class="text-center mt-3"></h5>
+ 
+  
+<h5 class="text-center mt-3">The entered food is {{ v }} </h5>
+    <table>
+      
+                
+      </table>
+
+<div class="column">
+<h5 class="text-center mt-3">Ingredents</h5>
+ 
+  
+    <table>
+      <tr>
+    <th>Nutrition</th>
+    <th>Nutrition Value</th> 
+    
+  </tr>
+    
+
+    
+                {% for a in ans %}
+                <tr>
+                  
+                  <td>{{ a["nutrientName"]}}</td>
+                  <td>{{ a["value"] }}
+                  {{ a['unitName'] }}</td>
+                  </tr>
+                  
+                {% endfor %}
+               </table> 
+               </div>
+  </div>
+</div>
+
+</body>
+</html>
+</div>
+      <div class="col-sm-6">
+
+
+ 
+ 
+ 
+
+      </div>
+<nav class="main-menu ">
+                    <ul class="menu-area-main">
+                      <li class="active"> <a href="/">Home</a> </li>
+                      <a type="button" class="btn btn-success mr-1" id="donate" href="login">LOGIN</a>
+                    <li>  <a type="button"  id="donate" href="register">register</a></li>
+                      
+                                      
+                     </ul>
+                   </nav>
+
+<figure><img src="static/images/5-2-healthy-food-png-image.png" alt="#" /></figure>
+<!-- contact -->
+
+
+      </div>
+    </div>
+</div>
+</div>
+    <!-- end contact -->
+
+    <!--  footer -->
+    <footr>
+      <div class="footer ">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+                  <div class="address">
+                    <h3>Developper details </h3>
+                    <ul class="loca">
+                      <li>
+                        <a href="#"></a>Prajwal G B </li>
+                          <li>
+                            <a href="#"></a>contactprajwalgb@gmail.com</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="address">
+                          <
+                          </ul>
+                        </div>
+                      </div>
+                     
+
+                      <div class="col-lg-4 col-md-6 col-sm-6 ">
+                        <div class="address">
+                          <h3></h3>
+                           
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="copyright">
+                <div class="container">
+                  <p> <a href="/">Back to Home page </a></p>
+                </div>
+              </div>
+            </div>
+          </footr>
+          <!-- end footer -->
+          <!-- Javascript files-->
+          <script src="js/jquery.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="js/jquery-3.0.0.min.js"></script>
+          <script src="js/plugin.js"></script>
+          <!-- sidebar -->
+          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <script src="js/custom.js"></script>
+          <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+          <script>
+
+</body>
+
+</html>
+
+
