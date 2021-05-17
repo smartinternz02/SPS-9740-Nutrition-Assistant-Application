@@ -11,15 +11,15 @@ from ibm_watson import VisualRecognitionV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 app = Flask(__name__)
 
-authenticator = IAMAuthenticator('2glD7p3nDw9LL0J6epwlTvYCQbcb1zmIP2IKfHDkjBJt')
+authenticator = IAMAuthenticator('API')
 
 app.secret_key = 'a'
 
 
 app.config['MYSQL_HOST'] = "remotemysql.com"   #for localhost
-app.config['MYSQL_USER'] = "5PBptgxlSy"       #for root   
-app.config['MYSQL_PASSWORD'] = "1S5Kj56oai"       #for ""
-app.config['MYSQL_DB'] = "5PBptgxlSy"      #database name
+app.config['MYSQL_USER'] = "USERID"       #for root   
+app.config['MYSQL_PASSWORD'] = "PASSWORD"       #for ""
+app.config['MYSQL_DB'] = "DATABASE"      #database name
    
 mysql = MySQL(app)
 @app.route('/')
