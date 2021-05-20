@@ -16,10 +16,10 @@ authenticator = IAMAuthenticator('API')
 app.secret_key = 'a'
 
 
-app.config['MYSQL_HOST'] = "remotemysql.com"   #for localhost
-app.config['MYSQL_USER'] = "USERID"       #for root   
-app.config['MYSQL_PASSWORD'] = "PASSWORD"       #for ""
-app.config['MYSQL_DB'] = "DATABASE"      #database name
+app.config['MYSQL_HOST'] = "remotemysql.com"   
+app.config['MYSQL_USER'] = "USERID"          
+app.config['MYSQL_PASSWORD'] = "PASSWORD"       
+app.config['MYSQL_DB'] = "DATABASE"     
    
 mysql = MySQL(app)
 @app.route('/')
@@ -230,7 +230,7 @@ def trackimage():
                     visual_recognition = VisualRecognitionV3(
                         version='2018-03-19',
                         authenticator=authenticator)
-                    visual_recognition.set_service_url('https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/63abb34c-24ed-46de-964b-cbc2d5da4e7d') 
+                    visual_recognition.set_service_url('URL') 
                     classes = visual_recognition.classify(images_filename=f.filename, 
                                               images_file=f ,classifier_ids='food').get_result() 
                     data=json.loads(json.dumps(classes,indent=4))
@@ -245,7 +245,7 @@ def trackimage():
                             r = requests.post(url, json=data)
                             return r.json()
         
-                        ans = call_API_2(x, "42d93mMY4R0b2Mt3RUAvt2bMqzbHRiOEhSCHHzOB")
+                        ans = call_API_2(x, "API")
         
                         v1 = ans["foods"][0]['description']
                         
@@ -256,7 +256,7 @@ def trackimage():
                         session['time'] = time
                         print(session['date'])
                         print(session['time'])
-                        ans = call_API_2(v, "42d93mMY4R0b2Mt3RUAvt2bMqzbHRiOEhSCHHzOB")
+                        ans = call_API_2(v, "API")
                         y={"a":"a"}
                         print(ans["foods"][0]['description'])
                         
@@ -341,7 +341,7 @@ def trackdata():
                             r = requests.post(url, json=data)
                             return r.json()
         
-                        ans = call_API_2(x, "42d93mMY4R0b2Mt3RUAvt2bMqzbHRiOEhSCHHzOB")
+                        ans = call_API_2(x, "API")
                         if x == "sugar":
                             x="sweet"
                         
@@ -356,7 +356,7 @@ def trackdata():
                             session['time'] = time
                             print(session['date'])
                             print(session['time'])
-                            #ans = call_API_2(v, "42d93mMY4R0b2Mt3RUAvt2bMqzbHRiOEhSCHHzOB")
+                            #ans = call_API_2(v, "API")
                             y={"a":"a"}
                             #print(ans["foods"][0]['description'])
                         
@@ -469,7 +469,7 @@ def gfg():
             visual_recognition = VisualRecognitionV3(
                         version='2018-03-19',
                         authenticator=authenticator)
-            visual_recognition.set_service_url('https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/63abb34c-24ed-46de-964b-cbc2d5da4e7d') 
+            visual_recognition.set_service_url('URL') 
             classes = visual_recognition.classify(images_filename=f.filename, 
                                               images_file=f,classifier_ids='food').get_result() 
             data=json.loads(json.dumps(classes,indent=4))
@@ -489,7 +489,7 @@ def gfg():
                     r = requests.post(url, json=data)
                     return r.json()
         
-                ans = call_API_2(x, "42d93mMY4R0b2Mt3RUAvt2bMqzbHRiOEhSCHHzOB")
+                ans = call_API_2(x, "API")
             
                 v = ans["foods"][0]['description']
                 v = "Your entered food is "+x
@@ -514,7 +514,7 @@ def happy():
             visual_recognition = VisualRecognitionV3(
                         version='2018-03-19',
                         authenticator=authenticator)
-            visual_recognition.set_service_url('https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/63abb34c-24ed-46de-964b-cbc2d5da4e7d') 
+            visual_recognition.set_service_url('URL') 
             classes = visual_recognition.classify(url=url1 ,classifier_ids='food').get_result() 
             data=json.loads(json.dumps(classes,indent=4))
 
@@ -530,7 +530,7 @@ def happy():
                 r = requests.post(url, json=data)
                 return r.json()
 
-            ans = call_API_2(x, "42d93mMY4R0b2Mt3RUAvt2bMqzbHRiOEhSCHHzOB")
+            ans = call_API_2(x, "API key")
         
             v = ans["foods"][0]['description']
             v = "Your entered food is "+x
@@ -560,7 +560,7 @@ def data():
                 r = requests.post(url, json=data)
                 return r.json()
 
-            ans = call_API_2(x, "42d93mMY4R0b2Mt3RUAvt2bMqzbHRiOEhSCHHzOB")
+            ans = call_API_2(x, "API key")
             if x=="sugar":
                 x="sweet"
         
