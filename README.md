@@ -1,9 +1,9 @@
 # SPS-9740-Nutrition-Assistant-Application
 Nutrition Assistant Application
 
-Youtube link::https://www.youtube.com/watch?v=95zSNy4Ca9Q
+# Youtube link::https://www.youtube.com/watch?v=95zSNy4Ca9Q
 
-Web app link: https://prajwalgbsnutritionassistant.apps.pcfdev.in/
+# Web app link: https://prajwalgbsnutritionassistant.apps.pcfdev.in/
 
 I have added the project report in the GitHub as the .pdf file
 
